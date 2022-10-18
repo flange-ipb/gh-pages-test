@@ -34,7 +34,7 @@ jobs:
       - name: Install build (PEP 517 build frontend)
         run: python -m pip install build
       - name: Build TUCAN wheel
-        run: python -m build --wheel --outdir ./pages/dist ./TUCAN
+        run: python -m build --wheel --outdir ./dist ./TUCAN
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
